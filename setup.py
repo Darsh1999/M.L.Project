@@ -8,15 +8,15 @@ def get_reqs(file_path:str)->List[str]:
     '''
     This function will return the list of req.
     '''
-    req=[]
+    reqe=[]
     with open(file_path) as file_obj:
-        req = file_obj.readlines()
-        req=[req.replace("\n","")for r in req]
+        reqe = file_obj.readlines()
+        reqe=[reqe.replace("\n","")for r in reqe]
 
-        if HYPEN_E_DOT in req:
-            req.remove(HYPEN_E_DOT)
+        if HYPEN_E_DOT in reqe:
+            reqe.remove(HYPEN_E_DOT)
 
-    return req
+    return reqe
 
 
 
